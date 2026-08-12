@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  /* Vitasilk 24K Gold — light luxe palette (ivory / champagne / gold) */
+  --color-ivory: #fbf8f2; /* page background */
+  --color-pearl: #f3ede1; /* alternating section background */
+  --color-champagne: #e3d3b0;
+  --color-champagne-dim: #d6c39a;
+
+  --color-gold: #c9a227;
+  --color-gold-light: #e8c86a;
+  --color-gold-deep: #9a7b1e; /* text-safe gold on ivory — 4.4:1 */
+
+  --color-espresso: #2a2118; /* body text, and the dark-section background */
+  --color-espresso-deep: #1d160f; /* deepest dark section */
+  --color-mocha: #6b5d4a; /* secondary text — 5.8:1 on ivory */
+
+  --font-display: var(--font-cormorant), var(--font-reem-kufi), serif;
+  --font-body: var(--font-jost), var(--font-tajawal), sans-serif;
+
+  --animate-shimmer: shimmer 2.8s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 2.8s ease-in-out infinite;
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+  /* On ivory a gold glow is invisible — use a warm drop shadow plus an
+     expanding champagne ring instead. */
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 10px 30px -8px rgba(154, 123, 30, 0.35), 0 0 0 0 rgba(201, 162, 39, 0.45);
+    }
+    50% {
+      box-shadow: 0 14px 40px -8px rgba(154, 123, 30, 0.5), 0 0 0 12px rgba(201, 162, 39, 0);
+    }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-espresso);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Arabic mode: swap font stacks so AR glyphs lead */
+[dir="rtl"] body,
+[dir="rtl"] {
+  --font-display: var(--font-reem-kufi), var(--font-cormorant), sans-serif;
+  --font-body: var(--font-tajawal), var(--font-jost), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Gold gradient text — ONLY for 24px+ display type on ivory/pearl.
+   The ramp is capped at #9a7b1e because that is the lightest gold that still
+   clears the 3:1 large-text threshold against pearl (#f3ede1 → 3.45:1). The
+   brand gold #c9a227 measures 2.08:1 there and must never carry text on a
+   light background. Everything smaller than 24px uses `text-espresso`. */
+.text-gold-gradient {
+  background: linear-gradient(100deg, #6a5210 0%, #85680f 35%, #9a7b1e 50%, #85680f 65%, #6a5210 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(100deg, #6a5210 0%, #85680f 30%, #9a7b1e 50%, #85680f 70%, #6a5210 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: var(--animate-shimmer);
+}
+
+/* Brighter ramp for the full-bleed espresso sections (BrandStory, Offer),
+   where the deep ramp above would disappear into the dark background. */
+.text-gold-gradient-on-dark {
+  background: linear-gradient(100deg, #a8862a 0%, #e8c86a 35%, #f6e3a1 50%, #e8c86a 65%, #a8862a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gold-shimmer-on-dark {
+  background: linear-gradient(100deg, #a8862a 0%, #e8c86a 35%, #fff3c4 50%, #e8c86a 65%, #a8862a 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: var(--animate-shimmer);
+}
+
+/* Fine gold hairline borders */
+.border-gold-hairline {
+  border: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+.border-gold-hairline-on-dark {
+  border: 1px solid rgba(232, 200, 106, 0.28);
+}
+
+/* Warm radial vignette behind the hero bottle */
+.gold-halo {
+  background: radial-gradient(closest-side, rgba(227, 211, 176, 0.75), rgba(201, 162, 39, 0.16) 55%, transparent 78%);
+}
+
+/* Soft warm elevation — replaces the dark theme's heavy black shadows */
+.shadow-luxe {
+  box-shadow: 0 18px 45px -20px rgba(42, 33, 24, 0.28), 0 2px 8px -4px rgba(42, 33, 24, 0.12);
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.28);
+  color: var(--color-espresso);
+}
