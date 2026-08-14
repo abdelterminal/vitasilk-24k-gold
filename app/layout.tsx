@@ -35,11 +35,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Vitasilk 24K Gold — Lissage Professionnel 1L | ليساج احترافي بالذهب",
   description:
-    "Vitasilk 24K Gold 1L — lissage professionnel sans acide glyoxylique ni formol. Or 24 carats, kératine, collagène et huile de coco pour des cheveux lisses, brillants et nourris. Livraison gratuite au Maroc, paiement à la livraison.",
+    "Vitasilk 24K Gold 1L — lissage professionnel sans acide glyoxylique ni formol. Or 24 carats, kératine, collagène et huile de coco pour aider les cheveux à paraître plus lisses, plus souples et plus brillants. Livraison gratuite au Maroc, paiement à la livraison.",
   openGraph: {
     title: "Vitasilk 24K Gold — Lissage Professionnel 1L",
     description:
-      "Sans acide glyoxylique, sans formol. Or 24 carats, kératine et collagène pour un lissage parfait et durable. Livraison gratuite au Maroc — paiement à la livraison.",
+      "Sans acide glyoxylique, sans formol. Or 24 carats, kératine et collagène pour un effet lissant longue durée. Livraison gratuite au Maroc — paiement à la livraison.",
     // dimensions come from the file, so they cannot drift out of sync with it
     images: [{ url: ogImage.src, width: ogImage.width, height: ogImage.height }],
     locale: "ar_MA",
