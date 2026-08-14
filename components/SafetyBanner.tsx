@@ -34,7 +34,7 @@ export function SafetyBanner() {
                   <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden>{SHIELD}</svg>
                 </span>
                 <h3 className="font-display text-xl text-espresso">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-mocha">{item.desc}</p>
+                <p className="mt-2 text-base leading-relaxed text-mocha">{item.desc}</p>
               </div>
             </Reveal>
           ))}

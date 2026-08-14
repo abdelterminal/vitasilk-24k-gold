@@ -3,6 +3,11 @@
 //
 // Price-bearing strings are FUNCTIONS taking an already-formatted price. Never
 // hardcode a price here: it would silently desync from `lib/config.ts`.
+//
+// Claims are deliberately phrased as "aide à" / "contribue à" rather than as
+// outright transformations. A cosmetic sold in Morocco may not promise to
+// rebuild hair; the copy review flagged every absolute claim on this page, and
+// the softened wording is the version that was signed off.
 
 export const fr = {
   announce: "Livraison gratuite partout au Maroc — Paiement à la livraison",
@@ -12,39 +17,39 @@ export const fr = {
     title1: "24K",
     title2: "Gold",
     subtitle:
-      "Le lissage professionnel à l'or 24 carats — sans acide glyoxylique, sans formol. Des cheveux lisses, nourris et éclatants dès la première application.",
-    cta: (price: string) => `Je commande — ${price}`,
-    badge1: "0% Acide Glyoxylique",
-    badge2: "1 L — Format Salon",
-    badge3: "Or 24K & Kératine",
+      "Le lissage professionnel à l'or 24 carats — sans acide glyoxylique, sans formol. Aide à rendre les cheveux plus lisses, plus souples et plus brillants dès la première utilisation.",
+    cta: (price: string) => `Commander — ${price}`,
+    badge1: "0 % d'acide glyoxylique",
+    badge2: "1 L — format professionnel",
+    badge3: "Or 24 carats & kératine",
     scroll: "Découvrir",
   },
   marquee: [
-    "Lissage parfait",
+    "Effet lissant longue durée",
     "Sans acide glyoxylique",
     "Or 24 carats",
-    "Kératine & Collagène",
-    "Brillance miroir",
-    "Format salon 1 L",
+    "Kératine & collagène",
+    "Brillance intense",
+    "Format professionnel 1 L",
   ],
   problem: {
     title: "Un lissage ne devrait pas abîmer vos cheveux",
     subtitle:
-      "Formules agressives, vapeurs irritantes, résultat qui s'efface au bout de trois lavages… La plupart des lissages coûtent cher à la fibre capillaire.",
+      "Formules agressives, vapeurs désagréables, résultat qui s'efface au bout de trois lavages… Certaines formules de lissage peuvent fragiliser la fibre capillaire.",
     points: [
-      "Formules à l'acide glyoxylique qui fragilisent la fibre",
-      "Vapeurs irritantes pour vous et pour votre coiffeuse",
+      "Certaines formules à l'acide glyoxylique peuvent fragiliser la fibre",
+      "Certaines formules peuvent produire des vapeurs désagréables pendant l'application",
       "Résultat qui s'estompe après quelques lavages",
-      "Cheveux secs, ternes et cassants après le lissage",
+      "Certaines techniques de lissage peuvent accentuer la sécheresse et fragiliser les cheveux",
     ],
     promiseTitle: "La promesse 24K Gold",
     promise:
-      "Une formule qui lisse en nourrissant : l'or 24 carats et la kératine referment la fibre, le collagène et les acides aminés la reconstruisent. Un lissage net et durable — sans acide glyoxylique, sans formol.",
+      "Une formule conçue pour lisser les cheveux tout en préservant leur douceur, leur souplesse et leur brillance. L'or 24 carats et la kératine aident à lisser la surface de la fibre, le collagène et les acides aminés contribuent à améliorer son apparence — sans acide glyoxylique, sans formol.",
   },
   safety: {
     title: "Sans acide glyoxylique. Sans formol.",
     subtitle:
-      "Le lissage professionnel que vous pouvez utiliser sereinement, séance après séance.",
+      "Un lissage professionnel à utiliser en respectant les instructions et les précautions indiquées.",
     items: [
       {
         title: "Sans acide glyoxylique",
@@ -52,64 +57,64 @@ export const fr = {
       },
       {
         title: "Sans formol",
-        desc: "Pas de vapeurs irritantes pour les yeux ni pour les voies respiratoires.",
+        desc: "Une formule conçue pour offrir une expérience d'application plus confortable.",
       },
       {
-        title: "Sûr en salon",
-        desc: "Utilisable toute la journée par les professionnelles, sans compromis sur le résultat.",
+        title: "Usage professionnel",
+        desc: "Adapté à une utilisation professionnelle, dans le respect des instructions et des précautions indiquées.",
       },
     ],
   },
   ingredients: {
     eyebrow: "La formule",
-    title: "L'or 24 carats, et ce qui l'accompagne",
-    subtitle: "Six actifs choisis pour lisser sans appauvrir la fibre capillaire.",
+    title: "L'or 24 carats et ses actifs complémentaires",
+    subtitle: "Six actifs sélectionnés pour accompagner le lissage et préserver l'apparence des cheveux.",
     items: [
       {
         name: "Or 24 carats",
-        desc: "Apporte éclat et brillance miroir, et aide à sceller la cuticule.",
+        desc: "Apporte de l'éclat et aide à lisser la surface de la fibre.",
       },
       {
         name: "Kératine",
-        desc: "La protéine dont le cheveu est fait — elle comble les brèches et lisse la fibre.",
+        desc: "La protéine qui compose le cheveu : elle aide à améliorer l'apparence de la fibre capillaire et à rendre les cheveux plus lisses.",
       },
       {
         name: "Collagène",
-        desc: "Redonne souplesse et élasticité aux longueurs fatiguées.",
+        desc: "Aide à améliorer la souplesse et l'élasticité des longueurs fatiguées.",
       },
       {
         name: "Huile de coco",
-        desc: "Nourrit en profondeur et protège la fibre pendant le passage du fer.",
+        desc: "L'huile de coco aide à nourrir les longueurs et à préserver leur souplesse pendant le passage du fer.",
       },
       {
         name: "Acides aminés",
-        desc: "Reconstruisent les liaisons abîmées par les colorations et la chaleur.",
+        desc: "Les acides aminés contribuent à améliorer l'apparence et la résistance des cheveux fragilisés.",
       },
       {
         name: "Panthénol",
-        desc: "Pro-vitamine B5 : retient l'hydratation au cœur du cheveu.",
+        desc: "Provitamine B5 : elle aide à maintenir l'hydratation et à améliorer la douceur des cheveux.",
       },
     ],
   },
   benefits: {
-    title: "Pourquoi il fait la différence",
+    title: "Ce qui fait la différence",
     subtitle: "Une formule professionnelle pensée pour des résultats visibles et durables",
     items: [
       {
-        title: "Lissage durable",
-        desc: "Un résultat net qui tient plusieurs semaines, lavage après lavage.",
+        title: "Effet lissant longue durée",
+        desc: "Un résultat qui se maintient plusieurs semaines, selon la fréquence des lavages et les soins utilisés.",
       },
       {
-        title: "Brillance miroir",
-        desc: "L'or 24 carats scelle la cuticule : la lumière accroche, les cheveux reflètent.",
+        title: "Brillance et éclat",
+        desc: "L'or 24 carats aide à lisser la surface de la fibre : la lumière accroche davantage.",
       },
       {
-        title: "Nourrit au lieu d'assécher",
-        desc: "Kératine, collagène et huile de coco reconstruisent pendant que le lissage agit.",
+        title: "Lisse sans appauvrir",
+        desc: "Kératine, collagène et huile de coco accompagnent le lissage et aident à préserver l'apparence des cheveux.",
       },
       {
-        title: "Format Salon 1 L",
-        desc: "Le vrai format professionnel : des dizaines d'applications, des mois d'utilisation.",
+        title: "Format professionnel 1 L",
+        desc: "Le vrai format de salon : des dizaines d'applications, des mois d'utilisation.",
       },
     ],
   },
@@ -120,63 +125,63 @@ export const fr = {
       "La texture, le parfum et le fini d'un lissage haut de gamme — désormais entre vos mains.",
   },
   beforeAfter: {
-    title: "Avant / Après",
-    subtitle: "Faites glisser pour voir la transformation",
+    title: "Avant / après : découvrez la transformation",
+    subtitle: "Faites glisser le curseur",
     before: "Avant",
     after: "Après",
   },
   howto: {
-    title: "3 gestes, résultat salon",
+    title: "3 gestes pour un résultat digne d'un salon",
     steps: [
       {
         title: "Lavez",
-        desc: "Lavez avec un shampooing clarifiant, puis séchez vos cheveux à 80%.",
+        desc: "Lavez vos cheveux avec un shampooing clarifiant, puis séchez-les à environ 80 %.",
       },
       {
         title: "Appliquez",
-        desc: "Appliquez le 24K Gold mèche par mèche, laissez poser 30 à 45 minutes.",
+        desc: "Répartissez le produit mèche par mèche et respectez le temps de pose indiqué : 30 à 45 minutes.",
       },
       {
         title: "Séchez & lissez",
-        desc: "Séchez complètement puis passez le fer pour sceller le soin. Admirez la brillance.",
+        desc: "Séchez complètement les cheveux, puis utilisez le fer à lisser à la température recommandée.",
       },
     ],
   },
   testimonials: {
     title: "Elles l'ont adopté",
-    subtitle: "+12 000 clientes satisfaites au Maroc",
+    subtitle: "Plus de 12 000 clientes satisfaites au Maroc",
     items: [
       {
         name: "Salma — Casablanca",
-        text: "J'ai fait des lissages pendant des années et mes cheveux le payaient. Avec le 24K Gold, c'est lisse ET nourri. La différence est énorme.",
+        text: "Après plusieurs lissages, mes cheveux étaient devenus plus secs et difficiles à coiffer. Avec le 24K Gold, je les ai trouvés plus souples et plus brillants.",
       },
       {
         name: "Imane — Rabat",
-        text: "Aucune odeur qui pique, aucune vapeur. J'ai pu le faire à la maison sans ouvrir toutes les fenêtres.",
+        text: "Aucune odeur qui pique pendant l'application. J'ai pu le faire à la maison en aérant simplement la pièce.",
       },
       {
         name: "Khadija — Marrakech",
-        text: "Je suis coiffeuse et je l'utilise au salon toute la journée. Sans acide glyoxylique, ça change la vie — et le résultat tient.",
+        text: "Je suis coiffeuse et je l'utilise au salon. Travailler sans acide glyoxylique change vraiment la journée, et le résultat tient.",
       },
       {
         name: "Sara — Tanger",
-        text: "Deux mois après, mes cheveux sont encore lisses et brillants. Le litre en vaut vraiment le prix.",
+        text: "Deux mois après, mes cheveux sont encore lisses et brillants. Le litre vaut vraiment son prix.",
       },
     ],
   },
   offer: {
     title: "Offre spéciale",
     subtitle: "Stock limité — profitez du prix spécial",
-    unit: "24K Gold — Lissage Professionnel 1 L",
-    save: (pct: number) => `Économisez ${pct}%`,
+    unit: "24K Gold — lissage professionnel 1 L",
+    save: (pct: number) => `Économisez ${pct} %`,
     freeDelivery: "Livraison gratuite",
     cod: "Paiement à la livraison",
     guarantee: "Satisfaite ou remboursée",
-    countdown: { title: "L'offre expire dans", h: "Heures", m: "Minutes", s: "Secondes" },
+    countdown: { title: "L'offre expire dans :", h: "Heures", m: "Minutes", s: "Secondes" },
     cta: "Commander maintenant",
   },
   form: {
-    title: "Commandez maintenant",
+    title: "Commander maintenant",
     subtitle:
       "Remplissez le formulaire — nous vous appelons pour confirmer. Paiement à la livraison.",
     name: "Nom complet",
@@ -196,7 +201,7 @@ export const fr = {
     errorText:
       "Vérifiez votre connexion et réessayez, ou commandez directement sur WhatsApp — votre commande est conservée.",
     retry: "Réessayer",
-    whatsapp: "Commander sur WhatsApp",
+    whatsapp: "Commander via WhatsApp",
     errors: {
       name: "Veuillez entrer votre nom",
       phone: "Numéro de téléphone invalide",
@@ -208,23 +213,35 @@ export const fr = {
     items: [
       {
         q: "Contient-il de l'acide glyoxylique ou du formol ?",
-        a: "Non, ni l'un ni l'autre. C'est précisément ce qui distingue le 24K Gold : le lissage est obtenu sans ces substances, sans vapeurs irritantes et sans compromis sur le résultat.",
+        a: "Le 24K Gold ne contient aucune de ces deux substances. C'est précisément ce qui le distingue : le lissage est obtenu sans elles et sans vapeurs irritantes. La liste complète des ingrédients figure sur l'étiquette du flacon.",
       },
       {
         q: "Convient-il à tous les types de cheveux ?",
-        a: "Oui — cheveux colorés, méchés, déjà lissés, bouclés ou naturels. Sur cheveux très épais ou très frisés, comptez un temps de pose proche de 45 minutes.",
+        a: "Il convient aux cheveux colorés, méchés, déjà lissés, bouclés ou naturels. Sur cheveux très épais ou très frisés, comptez un temps de pose proche de 45 minutes. Sur cheveux décolorés ou très fragilisés, réduisez le temps de pose et testez d'abord sur une mèche.",
+      },
+      {
+        q: "Faut-il faire un test avant la première utilisation ?",
+        a: "Oui. Appliquez une petite quantité derrière l'oreille et sur une mèche discrète 48 h avant, et vérifiez qu'aucune réaction n'apparaît. Ce test est recommandé pour tout soin capillaire professionnel.",
       },
       {
         q: "Combien de temps dure le lissage ?",
         a: "En moyenne 2 à 3 mois, selon la fréquence des lavages et le type de shampooing utilisé. Un shampooing sans sulfates prolonge nettement le résultat.",
       },
       {
-        q: "Combien d'applications avec le format 1 L ?",
+        q: "Quelle quantité utiliser, et à quelle fréquence ?",
+        a: "Environ 50 à 100 ml par application selon la longueur et l'épaisseur des cheveux. Une application tous les 2 à 3 mois suffit ; il est inutile de renouveler plus souvent.",
+      },
+      {
+        q: "Combien d'applications le format de 1 L permet-il ?",
         a: "Selon la longueur et l'épaisseur des cheveux, comptez 10 à 20 applications — plusieurs mois d'utilisation, ou une saison complète en salon.",
       },
       {
+        q: "Quelles précautions faut-il prendre ?",
+        a: "Réservé à un usage externe. Évitez le contact avec les yeux, aérez la pièce pendant le passage du fer, portez des gants pour l'application, et n'utilisez pas le produit sur un cuir chevelu irrité ou lésé. Tenir hors de portée des enfants.",
+      },
+      {
         q: "Comment se passe la livraison ?",
-        a: "Livraison gratuite partout au Maroc en 24 à 48h. Vous payez uniquement à la réception de votre commande.",
+        a: "Livraison gratuite partout au Maroc en 24 à 48 h. Vous payez uniquement à la réception de votre commande.",
       },
     ],
   },
