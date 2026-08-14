@@ -152,19 +152,19 @@ export const fr = {
     subtitle: "Plus de 12 000 clientes satisfaites au Maroc",
     items: [
       {
-        name: "Salma — Casablanca",
+        name: "Meryem — Fès",
         text: "Après plusieurs lissages, mes cheveux étaient devenus plus secs et difficiles à coiffer. Avec le 24K Gold, je les ai trouvés plus souples et plus brillants.",
       },
       {
-        name: "Imane — Rabat",
+        name: "Ghizlane — Agadir",
         text: "Aucune odeur qui pique pendant l'application. J'ai pu le faire à la maison en aérant simplement la pièce.",
       },
       {
-        name: "Khadija — Marrakech",
+        name: "Nadia — Meknès",
         text: "Je suis coiffeuse et je l'utilise au salon. Travailler sans acide glyoxylique change vraiment la journée, et le résultat tient.",
       },
       {
-        name: "Sara — Tanger",
+        name: "Hafsa — Tétouan",
         text: "Deux mois après, mes cheveux sont encore lisses et brillants. Le litre vaut vraiment son prix.",
       },
     ],
