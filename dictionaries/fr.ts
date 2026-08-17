@@ -10,7 +10,7 @@
 // the softened wording is the version that was signed off.
 
 export const fr = {
-  announce: "Livraison gratuite partout au Maroc — Paiement à la livraison",
+  announce: "Livraison gratuite partout au Maroc — paiement à la livraison",
   nav: { brand: "Vitasilk", cta: "Commander" },
   hero: {
     eyebrow: "Vitasilk Professional",
@@ -21,14 +21,14 @@ export const fr = {
     cta: (price: string) => `Commander — ${price}`,
     badge1: "0 % d'acide glyoxylique",
     badge2: "1 L — format professionnel",
-    badge3: "Or 24 carats & kératine",
+    badge3: "Or 24 carats et kératine",
     scroll: "Découvrir",
   },
   marquee: [
     "Effet lissant longue durée",
     "Sans acide glyoxylique",
     "Or 24 carats",
-    "Kératine & collagène",
+    "Kératine et collagène",
     "Brillance intense",
     "Format professionnel 1 L",
   ],
@@ -142,7 +142,7 @@ export const fr = {
         desc: "Répartissez le produit mèche par mèche et respectez le temps de pose indiqué : 30 à 45 minutes.",
       },
       {
-        title: "Séchez & lissez",
+        title: "Séchez et lissez",
         desc: "Séchez complètement les cheveux, puis utilisez le fer à lisser à la température recommandée.",
       },
     ],
