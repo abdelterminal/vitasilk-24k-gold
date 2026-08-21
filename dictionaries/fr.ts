@@ -17,7 +17,7 @@ export const fr = {
     title1: "24K",
     title2: "Gold",
     subtitle:
-      "Le lissage professionnel à l'or 24 carats — sans acide glyoxylique, sans formol. Aide à rendre les cheveux plus lisses, plus souples et plus brillants dès la première utilisation.",
+      "Le lissage professionnel à l’or 24 carats — sans acide glyoxylique ni formol selon l’étiquette. Il aide les cheveux à paraître plus lisses, plus souples et plus brillants.",
     cta: (price: string) => `Commander — ${price}`,
     badge1: "0 % d'acide glyoxylique",
     badge2: "1 L — format professionnel",
@@ -148,8 +148,8 @@ export const fr = {
     ],
   },
   testimonials: {
-    title: "Elles l'ont adopté",
-    subtitle: "Plus de 12 000 clientes satisfaites au Maroc",
+    title: "Comment l’intégrer à votre routine",
+    subtitle: "Exemples d’utilisation — pas des avis clients vérifiés",
     items: [
       {
         name: "Meryem — Fès",
@@ -171,12 +171,12 @@ export const fr = {
   },
   offer: {
     title: "Offre spéciale",
-    subtitle: "Stock limité — profitez du prix spécial",
+    subtitle: "Profitez du prix actuel ; la disponibilité est confirmée par téléphone",
     unit: "24K Gold — lissage professionnel 1 L",
     save: (pct: number) => `Économisez ${pct} %`,
     freeDelivery: "Livraison gratuite",
     cod: "Paiement à la livraison",
-    guarantee: "Satisfaite ou remboursée",
+    guarantee: "Conditions d’échange confirmées avant l’expédition",
     countdown: { title: "L'offre expire dans :", h: "Heures", m: "Minutes", s: "Secondes" },
     cta: "Commander maintenant",
   },
