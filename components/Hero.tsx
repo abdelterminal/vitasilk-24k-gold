@@ -62,8 +62,8 @@ export function Hero() {
           <div className="hero-title-wrap">
             <div className="hero-title-inner">
               <motion.h1 {...stagger(1)} className="font-display text-5xl leading-tight sm:text-6xl lg:text-7xl">
-                <span className="block text-espresso">{t.hero.title1}</span>
-                <span className="block text-gold-shimmer">{t.hero.title2}</span>
+                <span className="text-espresso">{"24K"}</span>{" "}
+                <span className="text-gold-shimmer">{"Gold"}</span>
               </motion.h1>
             </div>
           </div>
