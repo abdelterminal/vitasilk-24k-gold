@@ -78,8 +78,8 @@ export function Hero() {
               {t.hero.cta(formatDh(PRICE_DH, lang))}
             </a>
             <div className="flex items-center gap-2">
-              <span className="text-base line-through opacity-60 text-mocha">{formatDh(OLD_PRICE_DH, lang)}</span>
-              <span className="rounded-full bg-gold/15 px-2 py-0.5 text-xs font-medium text-gold-light">-{DISCOUNT_PCT}%</span>
+              <span dir="ltr" className="text-base line-through opacity-60 text-mocha">{formatDh(OLD_PRICE_DH, lang)}</span>
+              <span dir="ltr" className="rounded-full bg-gold/15 px-2 py-0.5 text-xs font-medium text-gold-light">-{DISCOUNT_PCT}%</span>
             </div>
           </motion.div>
           <motion.ul {...stagger(4)} className="mt-8 flex flex-wrap justify-center gap-2 md:justify-start">

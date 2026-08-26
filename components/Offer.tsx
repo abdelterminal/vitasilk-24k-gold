@@ -70,10 +70,10 @@ export function Offer() {
               <div className="text-center">
                 <h3 className="font-display text-2xl text-ivory">{t.offer.unit}</h3>
                 <div className="mt-4 flex items-baseline justify-center gap-4">
-                  <span className="font-display text-5xl text-gold-shimmer-on-dark sm:text-6xl">
+                  <span dir="ltr" className="font-display text-5xl text-gold-shimmer-on-dark sm:text-6xl">
                     {formatDh(PRICE_DH, lang)}
                   </span>
-                  <span className="text-xl text-champagne line-through">{formatDh(OLD_PRICE_DH, lang)}</span>
+                  <span dir="ltr" className="text-xl text-champagne line-through">{formatDh(OLD_PRICE_DH, lang)}</span>
                 </div>
                 <p className="mt-2 inline-block rounded-full bg-gold-light/15 px-3 py-1 text-sm font-medium text-gold-light">
                   {t.offer.save(DISCOUNT_PCT)}
