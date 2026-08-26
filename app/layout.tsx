@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Jost, Reem_Kufi, Tajawal } from "next/font/google";
+import { Cormorant_Garamond, Jost, Cairo } from "next/font/google";
 import { LangProvider } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/config";
 import ogImage from "@/assets/images/studio-front.webp";
@@ -19,15 +19,9 @@ const jost = Jost({
   subsets: ["latin"],
 });
 
-const reemKufi = Reem_Kufi({
-  variable: "--font-reem-kufi",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["arabic"],
-});
-
-const tajawal = Tajawal({
-  variable: "--font-tajawal",
-  weight: ["300", "400", "500", "700"],
+const cairo = Cairo({
+  variable: "--font-cairo",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["arabic"],
 });
 
@@ -62,7 +56,7 @@ export default function RootLayout({
       lang="ar"
       dir="rtl"
       suppressHydrationWarning
-      className={`${cormorant.variable} ${jost.variable} ${reemKufi.variable} ${tajawal.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${jost.variable} ${cairo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LangProvider>{children}</LangProvider>

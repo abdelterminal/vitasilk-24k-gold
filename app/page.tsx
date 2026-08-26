@@ -11,7 +11,6 @@ import { HowToUse } from "@/components/HowToUse";
 import { Testimonials } from "@/components/Testimonials";
 import { Offer } from "@/components/Offer";
 import { OrderForm } from "@/components/OrderForm";
-import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { StickyCta } from "@/components/StickyCta";
 
@@ -31,7 +30,6 @@ export default function Home() {
       <Testimonials />
       <Offer />
       <OrderForm />
-      <Faq />
       <Footer />
       <StickyCta />
     </main>

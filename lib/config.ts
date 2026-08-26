@@ -5,7 +5,7 @@
 // it, so changing the price here can never desync the copy.
 
 export const PRICE_DH = 1499;
-export const OLD_PRICE_DH = 1700;
+export const OLD_PRICE_DH = 2000;
 
 // TODO: replace with the real WhatsApp number (international format, no +)
 export const WHATSAPP_NUMBER = "212661086837";

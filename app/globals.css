@@ -15,8 +15,8 @@
   --color-espresso-deep: #1d160f; /* deepest dark section */
   --color-mocha: #6b5d4a; /* secondary text — 5.8:1 on ivory */
 
-  --font-display: var(--font-cormorant), var(--font-reem-kufi), serif;
-  --font-body: var(--font-jost), var(--font-tajawal), sans-serif;
+  --font-display: var(--font-cormorant), var(--font-cairo), serif;
+  --font-body: var(--font-jost), var(--font-cairo), sans-serif;
 
   --animate-shimmer: shimmer 2.8s linear infinite;
   --animate-float: float 6s ease-in-out infinite;
@@ -60,8 +60,8 @@ body {
 /* Arabic mode: swap font stacks so AR glyphs lead */
 [dir="rtl"] body,
 [dir="rtl"] {
-  --font-display: var(--font-reem-kufi), var(--font-cormorant), sans-serif;
-  --font-body: var(--font-tajawal), var(--font-jost), sans-serif;
+  --font-display: var(--font-cairo), var(--font-cormorant), sans-serif;
+  --font-body: var(--font-cairo), var(--font-jost), sans-serif;
 }
 
 .font-display {
