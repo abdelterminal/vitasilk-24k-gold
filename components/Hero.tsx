@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { useLang } from "@/lib/i18n";
-import { formatDh, PRICE_DH, PRODUCT_NAME } from "@/lib/config";
+import { formatDh, PRICE_DH, OLD_PRICE_DH, PRODUCT_NAME } from "@/lib/config";
 import { LanguageToggle } from "./LanguageToggle";
 import bottleHero from "@/assets/images/bottle-hero.webp";
 
@@ -78,7 +78,11 @@ export function Hero() {
               {t.hero.cta(formatDh(PRICE_DH, lang))}
             </a>
           </motion.div>
-          <motion.ul {...stagger(4)} className="mt-8 flex flex-wrap justify-center gap-2 md:justify-start">
+          <motion.div {...stagger(4)} className="mt-4 flex items-center justify-center gap-3 md:justify-start">
+            <span className="text-xl font-semibold text-gold-shimmer">{formatDh(PRICE_DH, lang)}</span>
+            <span className="text-base line-through opacity-40 text-mocha">{formatDh(OLD_PRICE_DH, lang)}</span>
+          </motion.div>
+          <motion.ul {...stagger(5)} className="mt-8 flex flex-wrap justify-center gap-2 md:justify-start">
             {[t.hero.badge1, t.hero.badge2, t.hero.badge3].map((b) => (
               <li
                 key={b}
