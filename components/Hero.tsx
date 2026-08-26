@@ -79,8 +79,9 @@ export function Hero() {
             </a>
           </motion.div>
           <motion.div {...stagger(4)} className="mt-4 flex items-center justify-center gap-3 md:justify-start">
-            <span className="text-xl font-semibold text-gold-shimmer">{formatDh(PRICE_DH, lang)}</span>
-            <span className="text-base line-through opacity-40 text-mocha">{formatDh(OLD_PRICE_DH, lang)}</span>
+            <span className="text-base line-through opacity-60 text-mocha">{formatDh(OLD_PRICE_DH, lang)}</span>
+            <span className="text-xl font-bold text-gold-shimmer">{formatDh(PRICE_DH, lang)}</span>
+            <span className="rounded-full bg-gold/15 px-2 py-0.5 text-xs font-medium text-gold-light">-{formatDh(OLD_PRICE_DH - PRICE_DH, lang)}</span>
           </motion.div>
           <motion.ul {...stagger(5)} className="mt-8 flex flex-wrap justify-center gap-2 md:justify-start">
             {[t.hero.badge1, t.hero.badge2, t.hero.badge3].map((b) => (
